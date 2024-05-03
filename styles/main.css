@@ -1,11 +1,149 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-location {
+  justify-content: center;
+  display: flex;
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+.main-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+
+.main-details__btn {
+  border-radius: 20px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-sort {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.menu-sort li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  gap: 20px;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 17em;
+  margin: 18px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cards-image {
+  width: 17em;
+  height: 10em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.cards-image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.cards-title {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #353535;
+  color: white;
+}
+
 body {
   background-color: white;
 }
 
-.logo img {
-  width: 61px;
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
-#location {
-  background-color: gray;
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: clamp(2rem, 2vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 500;
+}
+
+p {
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,108 @@
+//section main
+
+
+.main-location {
+    justify-content: center;
+    display: flex;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+//details du restaurant
+
+.main-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+//button
+
+.main-details__btn {
+    border-radius: 20px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+
+
+}
+//section--fonctionnement
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+   
+    &-sort {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #f6f6f6;
+            gap: 20px;
+            
+        }
+    }
+}
+
+//section--restaurant
+.restaurant  {
+    
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+
+
+
+//cards
+
+.cards {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+width: 17em;
+margin: 18px;
+border-radius: 15px;
+overflow: hidden; // Empêche le contenu de dépasser de la carte
+
+     &-image {
+         width: 17em;
+         height: 10em;
+         object-fit: cover;
+         border-radius: 15px 15px 0 0;
+ 
+     &-content {
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-decoration: none;
+     padding: 20px;
+ }
+ }
+ }
+     
+     
+
+
+
+
+
+// Style du titre de la carte
+.cards-title {
+ font-size: 1.5rem;
+ margin-top: 0;
+}
