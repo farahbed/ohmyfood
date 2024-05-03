@@ -1,4 +1,7 @@
 body {
-    background-color: green;
+    background-color: $primary-purple;
 }
-@import './header'
+
+@import './header';
+@import './variables';
+

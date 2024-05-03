@@ -1,7 +1,11 @@
 body {
-  background-color: green;
+  background-color: white;
 }
 
-header {
-  background-color: blue;
+.logo img {
+  width: 61px;
+}
+
+#location {
+  background-color: gray;
 }/*# sourceMappingURL=main.css.map */
