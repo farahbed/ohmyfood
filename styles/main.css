@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: center;
@@ -9,9 +10,11 @@
   display: flex;
   background-color: #eaeaea;
   padding: 10px;
+  box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.5), 0 -7px 7px -5px rgba(0, 0, 0, 0.5); /* Ombre en haut et en bas */
 }
 
-.main-details {
+.details {
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,12 +23,11 @@
   padding: 10px;
   background-color: #f6f6f6;
 }
-
-.main-details__btn {
+.details__btn {
   border-radius: 20px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: none;
   cursor: pointer;
 }
@@ -34,11 +36,22 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+  }
+}
 .menu-sort {
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu-sort {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .menu-sort li {
   display: flex;
@@ -48,11 +61,24 @@
   border-radius: 20px;
   background-color: #f6f6f6;
   gap: 20px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
 }
 
+@media screen and (min-width: 768px) {
+  .menu-title {
+    text-align: center;
+  }
+}
 .restaurant {
   background-color: #f6f6f6;
   border-radius: 20px;
+}
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
 }
 
 .cards {
@@ -80,11 +106,6 @@
   padding: 20px;
 }
 
-.cards-title {
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -96,6 +117,7 @@
 
 body {
   background-color: white;
+  margin: 0 auto;
 }
 
 html {
@@ -115,21 +137,6 @@ h2 {
   font-weight: 500;
 }
 
-h3 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-  font-weight: 500;
-}
-
-h4 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  font-weight: 500;
-}
-
-p {
-  font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -137,13 +144,4 @@ a {
 
 ul li {
   list-style-type: none;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 100%;
-  height: 100%;
 }/*# sourceMappingURL=main.css.map */
