@@ -24,12 +24,13 @@
   background-color: #f6f6f6;
 }
 .details__btn {
-  border-radius: 20px;
+  border-radius: 40px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
   padding: 20px 20px;
   border: none;
   cursor: pointer;
+  margin: 20px;
 }
 
 .menu {
@@ -64,55 +65,82 @@
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
 }
 
-@media screen and (min-width: 768px) {
-  .menu-title {
-    text-align: center;
-  }
-}
 .restaurant {
   background-color: #f6f6f6;
   border-radius: 20px;
 }
-.restaurant-card {
+.restaurant-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-  gap: 10px;
+  padding: 20px;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
 }
 
 .cards {
+  width: 26em;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 17em;
-  margin: 18px;
   border-radius: 15px;
   overflow: hidden;
 }
 .cards-image {
-  width: 17em;
-  height: 10em;
+  width: 26em;
+  height: 130px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
 }
-.cards-image-content {
+
+.cards-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
-  padding: 20px;
+  justify-content: flex-start;
+  height: 80px;
+  margin-left: 10px;
+}
+.cards-content-title {
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.cards-content-title-subtitle {
+  display: inline;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cards-content-title-subtitle-heart {
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
   background-color: #353535;
   color: white;
+}
+.footer_title {
+  font-size: 17px;
+  margin-left: 30px;
+  font-style: italic;
+  padding: 10px;
+}
+.footer_title_nav {
+  margin-left: 5px;
 }
 
 body {
@@ -121,7 +149,6 @@ body {
 }
 
 html {
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
@@ -129,12 +156,30 @@ html {
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
-  font-size: clamp(2rem, 2vw, 3rem);
 }
 
 h2 {
-  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  display: inline;
   font-weight: 500;
+  margin: 0;
+  unicode-bidi: normal;
+}
+
+h3 {
+  /* Nouvelles valeurs de style */
+  display: inline; /* Changer en "inline" pour afficher les balises h3 en ligne */
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0; /* Changer la marge supérieure et inférieure à 0.5em et supprimer les marges gauche et droite */
+  unicode-bidi: normal; /* Retirer la propriété unicode-bidi */
+}
+
+p {
+  display: inline;
+  font-size: 17px;
+  margin: 0;
+  font-weight: 300;
+  unicode-bidi: normal;
 }
 
 a {
