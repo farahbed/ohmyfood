@@ -1,5 +1,9 @@
 //section main
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 .main-location {
     justify-content: center;
