@@ -1,7 +1,12 @@
 // Mixin pour simplifier la définition des bordures arrondies
-@mixin border-radius($radius) {
-    border-radius: $radius;
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
+@mixin btn {
+
+    border-radius: 40px;
+    background: $btn;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
 }
+

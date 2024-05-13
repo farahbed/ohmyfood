@@ -6,13 +6,15 @@ body {
 }
 
 
+
 html{
-    font-family: "Roboto", sans-serif;
+    font-family: $text-font;
     scroll-behavior: smooth;
 }
 
 h1{
-    font-family: "Shrikhand", cursive;
+    display: inline;
+    font-family: $title-font;
     font-weight: 500;
 }
 
@@ -29,8 +31,8 @@ h3 {
     margin: 0; /* Changer la marge supérieure et inférieure à 0.5em et supprimer les marges gauche et droite */
     unicode-bidi: normal; /* Retirer la propriété unicode-bidi */
 }
-p{
-    display: inline;
+p {
+    display: flex;
     font-size: 17px;
     margin: 0;
     font-weight: 300;
