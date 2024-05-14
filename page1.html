@@ -22,89 +22,90 @@
 
     <main>
         
-        <section class="photo">
+        <div class="div-picture">
 
-            <img src="ImagesettextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
+            <img class="picture" src="ImagesettextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
 
-        </section>
-        <section class="menu">
+        </div>
+
+        <section class="meal">
             <div>
-            <h1>La palette du goût</h1>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
+                <h1 class="meal__title">La palette du goût</h1>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
             </div>
 
-            <div class="menu__section">
+            <div class="meal__section">
                 <h2>ENTRÉES</h2>
-                <ul>
+                <ul class="meal__list">
                     <li>
-                        <h3>Fricassée d'escargots</h3>
-                        <p>Au piment d'Espelette</p>
-                        <p>25€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Fricassée d'escargots</h3>
+                        <p class="meal-description">Au piment d'Espelette</p>
+                        <p class="price">25€</p>
+                        
                     </li>
                     <li>
-                        <h3>Foie gras de canard mi-cuit</h3>
-                        <p>Et ses copeaux de truffe noire</p>
-                        <p>35€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Foie gras de canard mi-cuit</h3>
+                        <p class="meal-description">Et ses copeaux de truffe noire</p>
+                        <p class="price">35€</p>
+                    
                     </li>
                     <li>
-                        <h3>Œuf au plat</h3>
-                        <p>Assaisonné à la truffe sur lit de caviar</p>
-                        <p>20€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Œuf au plat</h3>
+                        <p class="meal-description">Assaisonné à la truffe sur lit de caviar</p>
+                        <p class="price">20€</p>
+                    
                     </li>
                 </ul>
             </div>
-            <div class="menu__section">
+            <div class="meal__section">
                 <h2>PLATS</h2>
-                <ul>
+                <ul class="meal__list">
                     <li>
-                        <h3>Filet de boéuf aux herbes</h3>
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                        <p>40€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Filet de boeuf aux herbes</h3>
+                        <p class="meal-description">Accompagné de sa ribambelle de légumes</p>
+                        <p class="price">40€</p>
+                    
                     </li>
                     <li>
-                        <h3>Parmentier de queue de boeuf</h3>
-                        <p>A la truffe noire sur sa purée de panais</p>
-                        <p>35€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Parmentier de queue de boeuf</h3>
+                        <p class="meal-description">À la truffe noire sur sa purée de panais</p>
+                        <p class="price">35€</p>
+                    
                     </li>
                     <li>
-                        <h3>Filet de Turbot</h3>
-                        <p>Aux agrumes</p>
-                        <p>44€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Filet de Turbot</h3>
+                        <p class="meal-description">Aux agrumes</p>
+                        <p class="price">44€</p>
+                    
                     </li>
                 </ul>
             </div>
-            <div class="menu__section">
+            <div class="meal__section">
                 <h2>DESSERTS</h2>
-                <ul>
+                <ul class="meal__list">
                     <li>
-                        <h3>Paris-Brest</h3>
-                        <p>Revisite</p>
-                        <p>18€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Paris-Brest</h3>
+                        <p class="meal-description">Revisite</p>
+                        <p class="price">18€</p>
+                    
                     </li>
                     <li>
-                        <h3>Macaron au chocolat d'exception</h3>
-                        <p>Et glace a la vanille de Madagascar</p>
-                        <p>22€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Macaron au chocolat d'exception</h3>
+                        <p class="meal-description">Et glace à la vanille de Madagascar</p>
+                        <p class="price">22€</p>
+                    
                     </li>
                     <li>
-                        <h3>Mousse au chocolat</h3>
-                        <p>Au piment d'Espelette et à la truffe noire</p>
-                        <p>23€</p>
-                        <i class="fa-solid fa-check"></i>
+                        <h3 class="meal-title">Mousse au chocolat</h3>
+                        <p class="meal-description">Au piment d'Espelette et à la truffe noire</p>
+                        <p class="price">23€</p>
+                    
                     </li>
                 </ul>
             </div>
 
-            <button>Commander</button>
+            <button class="details__btn">Commander</button>
 
         </section>
     </main>
@@ -113,9 +114,11 @@
         <h2 class="footer_title">ohmyfood</h2>
         <ul class="footer_nav">
             <li>
+                <i class="fa-solid fa-utensils"></i>
                 <a href="#">Proposer un restaurant</a>
             </li>
             <li>
+                <i class="fa-solid fa-handshake-angle"></i>
                 <a href="#">Devenir partenaire</a>
             </li>
             <li>

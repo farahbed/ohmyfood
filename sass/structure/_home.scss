@@ -22,10 +22,11 @@
 	flex-direction: column;
 	text-align: center;
 	padding: 10px;
-	background-color: #f6f6f6;
+	background-color: $background_section;
 
 	&__btn {
-    @include btn;
+		margin: 20px;
+    	@include btn;
 	}
 }
 
@@ -71,7 +72,7 @@
 			align-items: center;
 			padding: 20px;
 			border-radius: 20px;
-			background-color: #f6f6f6;
+			background-color: $background_section;
 			gap: 20px;
 			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 
@@ -98,13 +99,13 @@
 
 //section--restaurant
 .restaurant {
-	background-color: #f6f6f6;
+	background-color: $background_section;
 
 	@media screen and (min-width: 768px) {
 		
 		.restaurant {
-		display: flex;
-		flex-direction: row;
+			display: flex;
+			flex-direction: row;
 		}
 
 		.restaurant-title {
@@ -156,15 +157,23 @@
 				height: 100px;
 				object-fit: cover;
 				border-radius: 20px 20px 0 0;
+			}
 			
-		
-
-				.cards-content {
+			.cards-content {
 				display: flex;
 				flex-direction: column;
-				height: 80px;
-				margin-left: 10px
+				margin-left: 10px;
+
+				.cards__heart {
+					font-weight: bold;
+                	display: flex;
+                	margin-left: auto;
+                	justify-content: flex-end;
+					
 				}
+			
+				
+
 			}
 		}
 	}

@@ -1,0 +1,91 @@
+//photo du restaurant
+
+.picture {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+// bouton
+
+.details__btn {
+    @include btn;
+}
+
+
+.meal {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+    background-color: $background_section;
+    border-radius: 50px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+
+	.meal__title {
+		margin-left: 20px;
+		font-size: 28px;
+        font-weight: 400;
+        font-style: italic;
+		
+       }
+       .meal__section h2 {
+        font-size: 16px;
+        color: black;
+        font-weight: 300;
+        border-bottom: 2px solid $light__green;
+    
+
+       }
+
+
+    .meal__list {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		gap: 20px;
+        text-align: left;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			justify-content: center;
+			gap: 50px;
+		}
+
+		& li {
+
+			display: flex;
+			align-items: flex-start;
+			padding: 10px;
+			border-radius: 20px;
+            background-color: white;
+			flex-direction: column;
+			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
+			@media screen and (min-width: 768px) {
+				width: 100%;
+                height: 50px;
+			}
+            .meal-title {
+        
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .meal-description {
+                font-size: 15px;
+            }
+            .price {
+                font-weight: bold;
+                display: flex;
+                margin-left: auto;
+                justify-content: flex-end;
+            }
+			
+		
+		}
+	}
+}
+

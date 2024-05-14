@@ -1,12 +1,19 @@
 // Mixin pour simplifier la définition des bordures arrondies
 @mixin btn {
 
-    border-radius: 40px;
-    background: $btn;
-    color: white;
-    padding: 20px 20px;
-    border: none;
-    cursor: pointer;
-    margin: 20px;
+        background: $btn;
+        color: white;
+        border: 4px solid;
+        border-radius: 10rem;
+        cursor: pointer;
+        font-size: 1rem;
+        overflow: hidden;
+        padding: 1rem;
+        position: relative;
+        transition: opacity 300ms;
+        &:hover {
+            opacity: 0.5;
+        }
+    
 }
 
