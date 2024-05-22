@@ -1,19 +1,21 @@
 //photo du restaurant
 
-.picture {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.div-picture {
+    height: 250px;
+    position: relative;
+    z-index: 1;
+    .picture {
+        width: 100%;
+        height: 150%;
+     
+    }
+
 }
 
-// bouton
-
-.details__btn {
-    @include btn;
-}
-
-
+// titre et coeur
 .meal {
+    position: relative;
+    z-index: 2;
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
@@ -23,69 +25,101 @@
     @media screen and (min-width: 768px) {
         justify-content: center;
     }
+    .meal-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .menu__title {
+            font-size: 28px;
+            font-weight: 400;
+            font-style: italic;
+        }
+            .cards__heart {
+                @include heart-toggle;
+
+            }
+          
 
 
-	.meal__title {
-		margin-left: 20px;
-		font-size: 28px;
-        font-weight: 400;
-        font-style: italic;
-		
-       }
-       .meal__section h2 {
-        font-size: 16px;
-        color: black;
-        font-weight: 300;
+
+
+    }
+
+}
+
+
+
+
+//section des plats
+
+
+.meal__section {
+   
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
         border-bottom: 2px solid $light__green;
+        width: 15%;
+    }
+        .meal__list {
+            display: grid;
+            gap: 10px;
+            padding: 0;
+            margin: 20px;
+
     
+            
+            li {
+                display: grid;
+                grid-template-columns: 1fr 10%;
+                grid-template-rows: 2fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px; 
+                padding: 10px;
+                border-radius: 20px;
+                background-color: white;
+                box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 
-       }
+                 @media screen and (min-width: 768px) {
+                    width: 100%;
+                    height: 50px;
+                }
+                    .meal__content {
+                        grid-area: 1 / 1 / 2 / 2;
+                        
+                        
+                        .meal__title {
+                            
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-style: italic;
+                                    
+                        }  
+                            .meal-description {
+                                font-size: 15px;
+                                font-weight: 300;
+                            }
+                    }
+                                .price {    
+                                    grid-area: 1 / 2 / 2 / 3;
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                    align-self: center;
+                                }
+                            
 
-
-    .meal__list {
-		display: flex;
-		flex-direction: column;
-		padding: 20px;
-		gap: 20px;
-        text-align: left;
-
-		@media screen and (min-width: 768px) {
-			flex-direction: row;
-			justify-content: center;
-			gap: 50px;
-		}
-
-		& li {
-
-			display: flex;
-			align-items: flex-start;
-			padding: 10px;
-			border-radius: 20px;
-            background-color: white;
-			flex-direction: column;
-			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-
-			@media screen and (min-width: 768px) {
-				width: 100%;
-                height: 50px;
-			}
-            .meal-title {
-        
-                font-weight: bold;
-                font-size: 18px;
-            }
-            .meal-description {
-                font-size: 15px;
-            }
-            .price {
-                font-weight: bold;
-                display: flex;
-                margin-left: auto;
-                justify-content: flex-end;
             }
 			
 		
 		}
-	}
+
+    
+    
+
 }
 
+.details__btn {
+    @include btn;
+    
+}

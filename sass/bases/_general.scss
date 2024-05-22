@@ -18,11 +18,7 @@ h1{
     font-weight: 500;
 }
 
-h2{  display: inline;
-    font-weight: 500;
-    margin: 0;
-    unicode-bidi: normal;
-}
+
 h3 {
     /* Nouvelles valeurs de style */
     display: inline; /* Changer en "inline" pour afficher les balises h3 en ligne */
@@ -35,7 +31,6 @@ p {
     display: flex;
     font-size: 16px;
     margin: 0;
-    font-weight: 500;
     unicode-bidi: normal;
 }
 
@@ -48,3 +43,11 @@ a{
 ul li{
     list-style-type: none;
 }
+.title-section{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: 000000;
+}
+

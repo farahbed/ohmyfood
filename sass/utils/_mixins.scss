@@ -11,9 +11,63 @@
         padding: 1rem;
         position: relative;
         transition: opacity 300ms;
+        box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.5);
         &:hover {
             opacity: 0.5;
         }
     
+}
+
+@mixin heart-toggle {
+    position: relative;
+    cursor: pointer;
+
+    .like-checkbox {
+        display: none; /* Cache la case à cocher */
+    }
+
+    .myemptyheart,
+    .myfullheart {
+        position: absolute;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .myemptyheart {
+        opacity: 1; /* Cœur vide visible par défaut */
+    }
+
+    .myfullheart {
+        background-image: $btn;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0; /* Cœur plein caché par défaut */
+    }
+
+    .like-checkbox:checked + label .myemptyheart {
+        opacity: 0; /* Cœur vide caché lorsque la case à cocher est cochée */
+    }
+
+    .like-checkbox:checked + label .myfullheart {
+        opacity: 1; /* Cœur plein visible lorsque la case à cocher est cochée */
+    }
+}
+
+
+
+
+
+@mixin new {
+    
+    justify-content: flex-end;
+    align-self: center;
+    border: 2px solid $light__green;
+    background-color: $light__green;
+    color: $primary__green;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    width: 40%;
+
 }
 

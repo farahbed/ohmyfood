@@ -1,13 +1,25 @@
 //sass/_header.scss 
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2px;
+    padding: 25px 0;
+    
+    .back-arrow {
+        position: absolute;
+        left: 25px;
+        top: 35px;
+        font-size: larger;
+    }
+
+    .logo {
+        width: 200px;
+        height: 36px;
 }
 
+}
 
-// Remplacer le H1 par une img
-// input pour "paris"
-// revoir les marges de la partie du button
-// ombre sur le button
 
