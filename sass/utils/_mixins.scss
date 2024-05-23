@@ -12,6 +12,7 @@
         position: relative;
         transition: opacity 300ms;
         box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.5);
+        align-self: center;
         &:hover {
             opacity: 0.5;
         }
