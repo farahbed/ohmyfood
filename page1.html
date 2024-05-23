@@ -10,22 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
         <a href="index.html"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
-        <img class="logo" src="ImagesettextesOhmyfood/images/logo/ohmyfood.png" alt="logo">
+        <img class="logo" src="Img&textes/images/logo/ohmyfood.png" alt="logo">
     </header>
 
     <main>
         
         <div class="div-picture">
 
-            <img class="picture" src="ImagesettextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
+            <img class="picture" src="Img&textes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
 
         </div>
 
@@ -41,7 +40,7 @@
                 </div>  
             </div>
 
-            <div class="meal__section">
+            <div class="meal__section" id="entrees">
                 <h2 class="title">ENTRÉES</h2>
                 <ul class="meal__list">
                     <li>
@@ -50,15 +49,24 @@
                             <p class="meal-description">Au piment d'Espelette</p>
                         </div>
                         <div class="price">25€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check">
+                                <i class="fa-solid fa-check"></i>
+                            </i>
+                        </div>
                     </li>
                     <li>
                         <div class="meal__content">
                             <h3 class="meal-title">Foie gras de canard mi-cuit</h3>
                             <p class="meal-description">Et ses copeaux de truffe noire</p>
                         </div>
-                        <div class="price">35€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="price-checkbox-container">
+                            <div class="price">35€</div>
+                            <div class="meal-checkbox">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                        </div>
                     
                     </li>
                     <li>
@@ -67,12 +75,14 @@
                             <p class="meal-description">Assaisonné à la truffe sur lit de caviar</p>
                         </div>
                         <div class="price">20€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
                     
                     </li>
                 </ul>
             </div>
-            <div class="meal__section">
+            <div class="meal__section" id="plats">
                 <h2 class="title">PLATS</h2>
                 <ul class="meal__list">
                     <li>
@@ -81,7 +91,9 @@
                             <p class="meal-description">Accompagné de sa ribambelle de légumes</p>
                         </div>
                         <div class="price">40€</div>
-                            <div class="meal-checkbox"></div>
+                            <div class="meal-checkbox">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
 
                     
                     </li>
@@ -91,7 +103,9 @@
                             <p class="meal-description">À la truffe noire sur sa purée de panais</p>
                         </div>
                         <div class="price">35€</div>
-                            <div class="meal-checkbox"></div>
+                            <div class="meal-checkbox">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                     
                     </li>
                     <li>
@@ -100,12 +114,14 @@
                             <p class="meal-description">Aux agrumes</p>
                         </div>
                         <div class="price">44€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
                     
                     </li>
                 </ul>
             </div>
-            <div class="meal__section">
+            <div class="meal__section" id="dessert">
                 <h2 class="title">DESSERTS</h2>
                 <ul class="meal__list">
                     <li>
@@ -114,7 +130,9 @@
                             <p class="meal-description">Revisite</p>
                         </div>
                         <div class="price">18€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
                     
                     </li>
                     <li>
@@ -123,7 +141,9 @@
                             <p class="meal-description">Et glace à la vanille de Madagascar</p>
                         </div>
                         <div class="price">22€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
                     </li>
                     <li>
                         <div class="meal__content">
@@ -131,7 +151,9 @@
                             <p class="meal-description">Au piment d'Espelette et à la truffe noire</p>
                         </div>
                         <div class="price">23€</div>
-                        <div class="meal-checkbox"></div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
                         
                     </li>
                 </ul>
