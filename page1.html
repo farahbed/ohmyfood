@@ -16,18 +16,18 @@
 
 <body>
     <header>
-        <a href="index.html"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
+        <a href="index.html"  aria-label="Retour à l'accueil"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
         <img class="logo" src="Img&textes/images/logo/ohmyfood.png" alt="logo">
     </header>
 
     <main>
-        
+        <!--cover's picture-->
         <div class="div-picture">
 
             <img class="picture" src="Img&textes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
 
         </div>
-
+        <!--RESTAURANT-->
         <section class="meal">
             <div class="meal-header">
                 <h1 class="menu__title">La palette du goût</h1>
@@ -39,124 +39,146 @@
                     </label>
                 </div>  
             </div>
-
+            <!--ENTREES-->
             <div class="meal__section" id="entrees">
                 <h2 class="title">ENTRÉES</h2>
-                <ul class="meal__list">
-                    <li>
-                        <div class="meal__content">
-                            <h3 class="meal-title">Fricassée d'escargots</h3>
-                            <p class="meal-description">Au piment d'Espelette</p>
+                    <div class="meal__list">
+                    
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Fricassée d'escargots</h3>
+                                <p class="meal-description">Au piment d'Espelette</p>
+                            </div>
+                            <div class="price-checkbox-container">
+                                <div class="price">25€</div>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </article>
+                    
+                
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Foie gras de canard mi-cuit</h3>
+                                <p class="meal-description">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="price-checkbox-container">
+                                <div class="price">35€</div>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+
+                        </article>
+                    
+            
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Œuf au plat</h3>
+                                <p class="meal-description">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="price-checkbox-container">
+                                <div class="price">20€</div>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+            </div>
+
+            <!--PLATS-->
+            <div class="meal__section" id="plats">
+                <h2 class="title">PLATS</h2>
+                <div class="meal__list">
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Filet de boeuf aux herbes</h3>
+                            <p class="meal-description">Accompagné de sa ribambelle de légumes</p>
                         </div>
-                        <div class="price">25€</div>
-                        <div class="meal-checkbox">
-                            <i class="fa-solid fa-check">
-                                <i class="fa-solid fa-check"></i>
-                            </i>
+                        <div class="price-checkbox-container">
+                            <div class="price">40€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="meal__content">
-                            <h3 class="meal-title">Foie gras de canard mi-cuit</h3>
-                            <p class="meal-description">Et ses copeaux de truffe noire</p>
+
+                    
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Parmentier de queue de boeuf</h3>
+                            <p class="meal-description">À la truffe noire sur sa purée de panais</p>
                         </div>
                         <div class="price-checkbox-container">
                             <div class="price">35€</div>
                             <div class="meal-checkbox">
-                                <i class="fa-solid fa-check"></i>
+                                <i class="fas fa-check-circle"></i>
                             </div>
-
                         </div>
                     
-                    </li>
-                    <li>
-                        <div class="meal__content">
-                            <h3 class="meal-title">Œuf au plat</h3>
-                            <p class="meal-description">Assaisonné à la truffe sur lit de caviar</p>
-                        </div>
-                        <div class="price">20€</div>
-                        <div class="meal-checkbox">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    
-                    </li>
-                </ul>
-            </div>
-            <div class="meal__section" id="plats">
-                <h2 class="title">PLATS</h2>
-                <ul class="meal__list">
-                    <li>
-                        <div class="meal__content">
-                            <h3 class="meal-title">Filet de boeuf aux herbes</h3>
-                            <p class="meal-description">Accompagné de sa ribambelle de légumes</p>
-                        </div>
-                        <div class="price">40€</div>
-                            <div class="meal-checkbox">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-
-                    
-                    </li>
-                    <li>
-                        <div class="meal__content">
-                            <h3 class="meal-title">Parmentier de queue de boeuf</h3>
-                            <p class="meal-description">À la truffe noire sur sa purée de panais</p>
-                        </div>
-                        <div class="price">35€</div>
-                            <div class="meal-checkbox">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                    
-                    </li>
-                    <li>
-                        <div class="meal__content">
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
                             <h3 class="meal-title">Filet de Turbot</h3>
                             <p class="meal-description">Aux agrumes</p>
                         </div>
-                        <div class="price">44€</div>
-                        <div class="meal-checkbox">
-                            <i class="fa-solid fa-check"></i>
+                        <div class="price-checkbox-container">
+                            <div class="price">44€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
                     
-                    </li>
-                </ul>
+                    </article>
+                </div>
             </div>
+
+            <!--DESSERTS-->
             <div class="meal__section" id="dessert">
                 <h2 class="title">DESSERTS</h2>
-                <ul class="meal__list">
-                    <li>
-                        <div class="meal__content">
+                <div class="meal__list">
+                    <article class="meal__content">
+                        <div class="meal__text">
                             <h3 class="meal-title">Paris-Brest</h3>
                             <p class="meal-description">Revisite</p>
                         </div>
-                        <div class="price">18€</div>
-                        <div class="meal-checkbox">
-                            <i class="fa-solid fa-check"></i>
+                        <div class="price-checkbox-container">
+                            <div class="price">18€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+
                         </div>
                     
-                    </li>
-                    <li>
-                        <div class="meal__content">
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
                             <h3 class="meal-title">Macaron au chocolat d'exception</h3>
                             <p class="meal-description">Et glace à la vanille de Madagascar</p>
                         </div>
-                        <div class="price">22€</div>
-                        <div class="meal-checkbox">
-                            <i class="fa-solid fa-check"></i>
+                        <div class="price-checkbox-container">
+                            <div class="price">22€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="meal__content">
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
                             <h3 class="meal-title">Mousse au chocolat</h3>
                             <p class="meal-description">Au piment d'Espelette et à la truffe noire</p>
                         </div>
-                        <div class="price">23€</div>
-                        <div class="meal-checkbox">
-                            <i class="fa-solid fa-check"></i>
+                        <div class="price-checkbox-container">
+                            <div class="price">23€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
                         </div>
                         
-                    </li>
-                </ul>
+                    </article>
+                </div>
             </div>
 
             <button class="details__btn">Commander</button>

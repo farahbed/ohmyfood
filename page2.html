@@ -8,111 +8,172 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
-        <h1>ohmyfood</h1>
+        <a href="index.html"  aria-label="Retour à l'accueil"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
+        <img class="logo" src="Img&textes/images/logo/ohmyfood.png" alt="logo">
     </header>
 
-    <!--LOCALISATION-->
+    
     <main>
-        <section class="div-picture">
-            <img class="picture" src="ImagesettextesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant">
-        </section>
+        <!--cover's picture-->
+        <div class="div-picture">
+            <img class="picture" src="Img&textes/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant">
+        </div>
+        <!--RESTAURANT-->
         <section class="meal">
-            <div>
-                <h1>Le délice des sens</h1>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
+            <div class="meal-header">
+                <h1 class="menu__title">Le délice des sens</h1>
+                <div class="cards__heart">
+                    <input type="checkbox" id="likeButton2" class="like-checkbox">
+                    <label for="likeButton2">
+                        <i class="fa-regular fa-heart myemptyheart"></i>
+                        <i class="fa-solid fa-heart myfullheart"></i>
+                    </label>
+                </div>
             </div>
-            <div class="meal__section">
-                <h2>ENTRÉES</h2>
-                <ul class="meal__list">
-                    <li>
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>
-                        <p>25€</p>
-                    
-                    </li>
-
-                    <li>
-                        <h3>Bouchée de homard croustillant</h3>
-                        <p>Et sa farandole de petits légumes</p>
-                        <p>35€</p>
-                    
-                    </li>
-                    
-                    <li>
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
-                        <p>20€</p>
-                    
-                    </li>
-                </ul>
+                        
+            <!--ENTREES-->
+            <div class="meal__section" id="entrees">
+                <h2 class="title">ENTRÉES</h2>
+                <div class="meal__list">
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Tartare de thon</h3>
+                            <p class="meal-description">Assaisonné au yuzu</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">25€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Bouchée de homard croustillant</h3>
+                            <p class="meal-description">Et sa farandole de petits legumes</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">35€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Velouté de cèpes</h3>
+                            <p class="meal-description">Aux truffes</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">20€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="meal__section">
-                <h2>PLATS</h2>
-                <ul class="meal__list">
-                    <li>
-                        <h3>Poulet rôti aux herbes de Provence</h3>
-                        <p>Et sa crème de truffe</p>
-                        <p>40€</p>
-                    
-                    </li>
-                    
-                    <li>
-                        <h3>Langouste rôtie</h3>
-                        <p>Et ses légumes de saison</p>
-                        <p>35€</p>
-                    
-                    </li>
-
-                    <li>
-                        <h3>Côte de boeuf Angus</h3>
-                        <p>Et sa purée de panais</p>
-                        <p>44€</p>
-                    
-
-                    </li>
-                </ul>
+            <!--PLATS-->
+            <div class="meal__section" id="plats">
+                <h2 class="title">PLATS</h2>
+                <div class="meal__list">
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Poulet rôti aux herbes de Provence</h3>
+                            <p class="meal-description">Et sa crème de truffe</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">40€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Langouste rôtie</h3>
+                            <p class="meal-description">Et ses légumes de saison</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">35€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Côte de boeuf Angus</h3>
+                            <p class="meal-description">Et sa purée de panais</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">44€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="meal__section">
-                <h2>DESSERTS</h2>
-                <ul class="meal__list">
-                    <li>
-                        <h3>farandole de desserts</h3>
-                        <p>Du chef</p>
-                        <p>18€</p>
-                    
-                    </li>
-
-                    <li>
-                        <h3>Crème brulée</h3>
-                        <p>Revisitée</p>
-                        <p>22€</p>
-                    
-                    </li>
-
-                    <li>
-                        <h3>Tiramisu</h3>
-                        <p>À la noisette</p>
-                        <p>23€</p>
-                    
-                    </li>
-                </ul>
+            <!--DESSERTS-->
+            <div class="meal__section" id="dessert">
+                <h2 class="title">DESSERTS</h2>
+                <div class="meal__list">
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Farandole de desserts</h3>
+                            <p class="meal-description">Du chef</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">18€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Crème brulee</h3>
+                            <p class="meal-description">Revisitee</p>
+                        </div>  
+                        <div class="price-checkbox-container">
+                            <div class="price">22€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                                </div>
+                        </div>
+                    </article>
+                    <article class="meal__content">
+                        <div class="meal__text">
+                            <h3 class="meal-title">Tiramisu</h3>
+                            <p class="meal-description">A la noisette</p>
+                        </div>
+                        <div class="price-checkbox-container">
+                            <div class="price">23€</div>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
             </div>
-
             <button class="details__btn">Commander</button>
-
         </section>
-        
     </main>
+    
      <!--FOOTER-->
      <footer>
         <h2 class="footer_title">ohmyfood</h2>

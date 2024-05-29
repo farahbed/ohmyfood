@@ -20,7 +20,8 @@
 	display: flex;
 	flex-direction: column;
     background-color: $background_section;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
+    padding-left: 4%;
     @media screen and (min-width: 768px) {
         margin-left: 15%;
         margin-right: 15%;
@@ -59,6 +60,7 @@
 
 
 .meal__section {
+   
     @media screen and (min-width: 768px) {
         
         align-items: center;
@@ -82,38 +84,50 @@
             padding: 0;
             display: flex;
             flex-direction: column;
+            margin: 15px;
             
             
-            li {
+            
+            .meal__content {
                 display: flex; 
                 padding: 10px;
                 border-radius: 20px;
                 background-color: white;
                 box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+                width: 89%;
+                
                 
                 
                  
-                    .meal__content {
-                        
+                    .meal__text {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         width: 100%;
-                        
+                       
+                       
                         .meal__title {
                             
                             font-size: 18px;
                             font-weight: 500;
                             font-style: italic;
+                           
+                            
+                            
                                     
                         }  
                             .meal-description {
                                 font-size: 15px;
                                 font-weight: 300;
+                                
+                                width: 75%;
                             }
                     }
                                 .price {    
                                     
                                     font-weight: bold;
                                     font-size: 15px;
-                                    align-self: center;
+                                   
 
                                 }
 
@@ -145,89 +159,4 @@
 
 
 
-// Keyframes for the animation
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-// Animate the sections
-#entrees {
-    @include fadeInUp(0.5s);
-
-    .meal__list > li:nth-child(1) {
-        @include fadeInUp(1s);
-    }
-    .meal__list > li:nth-child(2) {
-        @include fadeInUp(1.2s);
-    }
-    .meal__list > li:nth-child(3) {
-        @include fadeInUp(1.4s);
-    }
-}
-
-#plats {
-    @include fadeInUp(1s);
-
-    .meal__list > li:nth-child(1) {
-        @include fadeInUp(1.5s);
-    }
-    .meal__list > li:nth-child(2) {
-        @include fadeInUp(1.7s);
-    }
-    .meal__list > li:nth-child(3) {
-        @include fadeInUp(1.9s);
-    }
-}
-
-#dessert {
-    @include fadeInUp(1.5s);
-
-    .meal__list > li:nth-child(1) {
-        @include fadeInUp(2s);
-    }
-    .meal__list > li:nth-child(2) {
-        @include fadeInUp(2.2s);
-    }
-    .meal__list > li:nth-child(3) {
-        @include fadeInUp(2.4s);
-    }
-}
-
- 
-// Ensure the parent li is positioned relative
-.meal__list > li {
-    position: relative;
-}
-
-// Style for the meal-checkbox
-.price-checkbox-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-
-
-    .meal-checkbox {
-        position: absolute;
-        right: -30px; // Initially position outside the box, adjust as needed
-        width: 20px; // Adjust as needed
-        height: 20px; // Adjust as needed
-        background-color: green; // Set the background color to green
-        opacity: 0; // Hide it initially
-        transition: all 0.3s ease-out; // Smooth transition
-    }
-
-// Show the checkbox on hover
-    .price-checkbox-container:hover {
-        right: 10px; // Position it next to the price, adjust as needed
-        opacity: 1; // Make it visible
-    }
-
-}
 

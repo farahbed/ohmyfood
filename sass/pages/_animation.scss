@@ -1,0 +1,103 @@
+//animation delay for each section
+
+// Keyframes for the animation
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Animate the sections
+#entrees {
+    @include fadeInUp(0.5s);
+
+    .meal__list > .meal__content:nth-child(1) {
+        @include fadeInUp(1s);
+    }
+    .meal__list > .meal__content:nth-child(2) {
+        @include fadeInUp(1.2s);
+    }
+    .meal__list > .meal__content:nth-child(3) {
+        @include fadeInUp(1.4s);
+    }
+}
+
+#plats {
+    @include fadeInUp(1s);
+
+    .meal__list > .meal__content:nth-child(1) {
+        @include fadeInUp(1.5s);
+    }
+    .meal__list > .meal__content:nth-child(2) {
+        @include fadeInUp(1.7s);
+    }
+    .meal__list > .meal__content:nth-child(3) {
+        @include fadeInUp(1.9s);
+    }
+}
+
+#dessert {
+    @include fadeInUp(1.5s);
+
+    .meal__list > .meal__content:nth-child(1) {
+        @include fadeInUp(2s);
+    }
+    .meal__list > .meal__content:nth-child(2) {
+        @include fadeInUp(2.2s);
+    }
+    .meal__list > .meal__content:nth-child(3) {
+        @include fadeInUp(2.4s);
+    }
+}
+
+ // Ensure the parent li is positioned relative
+.meal__list > .meal__content {
+    position: relative;
+}
+
+
+//animation pour le checkbox
+
+// Style for the meal-checkbox
+
+    $color_1: white;
+    $background-color_1: $light__green;
+    
+    /* Afficher la case à cocher au survol */
+    .price-checkbox-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:hover {
+            .meal-checkbox {
+                opacity: 1;
+                left: calc(100% - 35px);
+            }
+            .price {
+                margin-left: -30px;
+            }
+        }
+    }
+    .price {
+        transition: margin-left 0.3s ease-out;
+    }
+    .meal-checkbox {
+        width: 45px;
+        height: 151%;
+        background-color: $background-color_1;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 70%;
+        i {
+            font-size: 20px;
+            color: $color_1;
+        }
+    }
+    

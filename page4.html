@@ -17,102 +17,146 @@
 
 <body>
     <header>
-        <h1>ohmyfood</h1>
+        <a href="index.html"  aria-label="Retour à l'accueil"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
+        <img class="logo" src="Img&textes/images/logo/ohmyfood.png" alt="logo">
     </header>
 
-    <!--LOCALISATION-->
     <main>
-        <section class="div-picture">
-            <img class="picture" src="ImagesettextesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant">
+        <!--cover's picture-->
+        <div class="div-picture">
+            <img class="picture" src="Img&textes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant">
+        </div>
+         <!--RESTAURANT-->
+         <section class="meal">
+            <div class="meal-header">
+                <h1 class="menu__title">À la française</h1>
+                <div class="cards__heart">
+                    <input type="checkbox" id="likeButton4" class="like-checkbox">
+                    <label for="likeButton4" aria-label="J'aime">
+                        <i class="fa-regular fa-heart myemptyheart"></i>
+                        <i class="fa-solid fa-heart myfullheart"></i>
+                    </label>
+                </div>  
+            </div>
+        <!--ENTREES-->
+            <div class="meal__section" id="entrees">
+                <h2 class="title">ENTRÉES</h2>
+                <ul class="meal__list"> 
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Tartare de poulpe acidulé</h3>
+                            <p class="meal-description">Aux zestes d'orange</p>
+                        </div>
+                        <div class="price">25€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Velouté de légumes d'antan</h3>
+                            <p class="meal-description">Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="price">35€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Soupe a l'oignon</h3>
+                            <p class="meal-description">Revisitee</p>
+                        </div>
+                        <div class="price">20€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        <!--PLATS-->
+            <div class="meal__section" id="plats">
+                <h2 class="title">PLATS</h2>
+                <ul class="meal__list">
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Coquilles Saint-Jacques</h3>
+                            <p class="meal-description">Accompagnees d'une puree de panais</p>
+                        </div>
+                        <div class="price">40€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div> 
+                    </li>
+                    
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Magret de canard</h3>
+                            <p class="meal-description">Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="price">35€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Pigeonneau d'Ille-et-Vilaine</h3>
+                            <p class="meal-description">Sur son lit de gnocchis aux leves</p>
+                        </div>
+                        <div class="price">44€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <!--DESSERTS-->
+            <div class="meal__section" id="dessert">
+                <h2 class="title">DESSERTS</h2>
+                <ul class="meal__list">
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Pétales de violettes glacees</h3>
+                            <p class="meal-description">Et puree de noisettes</p>
+                        </div>
+                        <div class="price">18€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Fondant au chocolat</h3>
+                            <p class="meal-description">Revisitee</p>
+                        </div>
+                        <div class="price">22€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="meal__content">
+                            <h3 class="meal-title">Millefeuille croustillant</h3>
+                            <p class="meal-description">Myrtilles et palets d'amandes</p>
+                        </div>
+                        <div class="price">23€</div>
+                        <div class="meal-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <!--BOUTON-->
+                <button class="details__btn">Commander</button>
         </section>
-        <section class="meal">
-            <div>
-                <h1>À la française</h1>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="meal__section">
-                <h2>ENTREES</h2>
-                <ul class="meal__list">
-                    
-                    <li>
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zestes d'orange</p>
-                        <p>25€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
 
-                    <li>
-                        <h3>Velouté de légumes d'antan</h3>
-                        <p>Carotte, panais, topinambour</p>
-                        <p>35€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-                    
-                    <li>
-                        <h3>Soupe à l'oignon</h3>
-                        <p>Revisitée</p>
-                        <p>20€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-                </ul>
-            </div>
-            <div class="meal__section">
-                <h2>PLATS</h2>
-                <ul class="meal__list">
-                    <li>
-                        <h3>Coquilles Saint-Jacques </h3>
-                        <p> Accompagnées d'une purée de panais</p>
-                        <p>40€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-                    
-                    <li>
-                        <h3>Magret de canard</h3>
-                        <p>Et parmentier de pommes de terre</p>
-                        <p>35€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-
-                    <li>
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                        <p>Sur son lit de gnocchis aux legumes</p>
-                        <p>44€</p>
-                        <i class="fa-solid fa-check"></i>
-
-                    </li>
-                </ul>
-            </div>
-            <div class="meal__section">
-                <h2>DESSERTS</h2>
-                <ul class="meal__list">
-                    <li>
-                        <h3>Pétales de violettes glaces</h3>
-                        <p>Et puree de noisettes</p>
-                        <p>18€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-
-                    <li>
-                        <h3>Fondant au chocolat</h3>
-                        <p>Revisité</p>
-                        <p>22€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-
-                    <li>
-                        <h3>Millefeuille croustillant</h3>
-                        <p>Myrtilles et pât d’amande</p>
-                        <p>23€</p>
-                        <i class="fa-solid fa-check"></i>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="details__btn">Commander</button>
-
-        </section>
-        
     </main>
      <!--FOOTER-->
      <footer>
