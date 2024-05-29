@@ -117,26 +117,7 @@
 
                                 }
 
-                                    &__check{      // animation checkbox
-                                        
-                                        margin-right: -65px;
-                                        width: 65px;
-                                        padding: 0 rem-calc(15);
-                                        background-color: $light__green;
-                                        transition: margin-right 0.4s ease-in-out;
-                                            &::after{
-                                                content: '';
-                                                padding: rem-calc(5);
-                                                border-radius: 50%;
-                                                color: $light__green;
-                                                border: 2px solid $light__green;
-                                                background-color: #fff;
-                                                transition: transform 0.4s ease-in-out;
-                                                
-                                            }
-                                            
-                                            
-                                    }
+                                    
                                 
                             
 
@@ -230,17 +211,17 @@
     position: relative;
     display: flex;
     align-items: center;
-}
 
-.meal-checkbox {
-    position: absolute;
-    right: -30px; // Initially position outside the box, adjust as needed
-    width: 20px; // Adjust as needed
-    height: 20px; // Adjust as needed
-    background-color: green; // Set the background color to green
-    opacity: 0; // Hide it initially
-    transition: all 0.3s ease-out; // Smooth transition
 
+    .meal-checkbox {
+        position: absolute;
+        right: -30px; // Initially position outside the box, adjust as needed
+        width: 20px; // Adjust as needed
+        height: 20px; // Adjust as needed
+        background-color: green; // Set the background color to green
+        opacity: 0; // Hide it initially
+        transition: all 0.3s ease-out; // Smooth transition
+    }
 
 // Show the checkbox on hover
     .price-checkbox-container:hover {
@@ -249,3 +230,4 @@
     }
 
 }
+
