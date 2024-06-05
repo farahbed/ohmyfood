@@ -19,6 +19,7 @@
   background-color: #F6F6F6;
   border-radius: 50px 50px 0 0;
   padding-left: 4%;
+  padding-right: 4%;
 }
 @media screen and (min-width: 768px) {
   .meal {
@@ -100,27 +101,35 @@
 }
 .meal__section .meal__list .meal__content {
   display: flex;
+  align-items: center;
+  position: relative;
   padding: 10px;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-  width: 89%;
+  overflow: hidden;
 }
 .meal__section .meal__list .meal__content .meal__text {
-  white-space: nowrap;
+  flex: 1;
   overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: nowrap;
   width: 100%;
 }
-.meal__section .meal__list .meal__content .meal__text .meal__title {
+.meal__section .meal__list .meal__content .meal__text__title {
   font-size: 18px;
   font-weight: 500;
   font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.meal__section .meal__list .meal__content .meal__text .meal-description {
+.meal__section .meal__list .meal__content .meal__text-description {
   font-size: 15px;
   font-weight: 300;
-  width: 75%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .meal__section .meal__list .meal__content .price {
   font-weight: bold;
@@ -224,40 +233,37 @@
   position: relative;
 }
 
-/* Afficher la case à cocher au survol */
-.price-checkbox-container {
-  display: flex;
-  align-items: center;
+.price .meal__text {
+  transition: transform 0.3s ease-out;
   position: relative;
-}
-.price-checkbox-container:hover .meal-checkbox {
-  opacity: 1;
-  left: calc(100% - 35px);
-}
-.price-checkbox-container:hover .price {
-  margin-left: -30px;
-}
-
-.price {
-  transition: margin-left 0.3s ease-out;
+  z-index: 1;
 }
 
 .meal-checkbox {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: -45px;
   width: 45px;
-  height: 151%;
+  height: 100%;
   background-color: #99E2D0;
   opacity: 0;
   transition: all 0.3s ease-out;
   border-radius: 0 15px 15px 0;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 70%;
 }
 .meal-checkbox i {
   font-size: 20px;
   color: white;
+}
+
+.meal__content:hover .meal-checkbox {
+  opacity: 1;
+  right: 0;
+}
+
+.meal__content:hover .price {
+  transform: translateX(-45px);
 }
 
 header {
