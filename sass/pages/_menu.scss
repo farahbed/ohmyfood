@@ -98,21 +98,23 @@
                 
                 .meal__text {
                         overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        width: calc(100% - 50%);
+                        width: 100%;
                        
                         .meal-title {
                             
                             font-size: 18px;
                             font-weight: 500;
                             font-style: italic;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
                         } 
                             
                             .meal-description {
                                 font-size: 15px;
                                 font-weight: 300;
-                                width: 100%;   
+                                width: 100%; 
+                                white-space: nowrap;
+                                text-overflow: ellipsis;  
                             }
                         
                     }
@@ -121,8 +123,7 @@
                                     font-weight: bold;
                                     font-size: 15px;
                                     margin-left: auto;
-                                   
-
+                                    
                                 }                
             }
 		}
