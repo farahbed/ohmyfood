@@ -46,7 +46,6 @@
   margin-left: 10px;
 }
 .meal .meal-header .cards__heart {
-  position: relative;
   cursor: pointer;
   font-size: larger;
   position: relative;
@@ -103,34 +102,39 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 10px;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
 }
 .meal__section .meal__list .meal__content .meal__text {
   overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
+  margin-left: 10px;
 }
 .meal__section .meal__list .meal__content .meal__text .meal-title {
   font-size: 18px;
   font-weight: 500;
   font-style: italic;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .meal__section .meal__list .meal__content .meal__text .meal-description {
   font-size: 15px;
   font-weight: 300;
-  width: 100%;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .meal__section .meal__list .meal__content .price {
   font-weight: bold;
   font-size: 15px;
   margin-left: auto;
+  margin-right: 20px;
 }
 
 .details__btn {
@@ -182,6 +186,11 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.5s ease-out forwards 1.4s;
+}
+#entrees .meal__list > .meal__content:nth-child(4) {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards 1.6s;
 }
 
 #plats {
@@ -239,15 +248,15 @@
 .meal-checkbox {
   display: flex;
   align-items: center;
-  position: absolute;
-  right: -45px;
-  width: 45px;
-  height: 100%;
+  margin-right: -60px;
+  width: 60px;
+  height: 60px;
   background-color: #99E2D0;
-  opacity: 0;
   transition: all 0.3s ease-out;
   border-radius: 0 15px 15px 0;
   justify-content: center;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 .meal-checkbox i {
   font-size: 20px;
@@ -256,15 +265,7 @@
 
 .meal__content:hover .meal-checkbox {
   opacity: 1;
-  right: 0;
-}
-
-.meal__content:hover .price {
-  transform: translateX(-45px);
-}
-
-.meal__content.meal__content:hoveer .meal__text {
-  transform: translateX(-45px);
+  margin-right: -5px;
 }
 
 #loader {
@@ -509,43 +510,46 @@ footer .footer_nav i {
   border-radius: 20px;
   margin: auto;
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 65% 30%;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 65% 35%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 100%;
-  height: 160px;
+  height: 250px;
 }
-.restaurant .restaurant-cards .cards .cards-image-container {
+.restaurant .restaurant-cards .cards .cards-link {
   grid-area: 1/1/2/3;
 }
-.restaurant .restaurant-cards .cards .cards-image-container .cards-image {
-  width: 125%;
-  height: 100px;
+.restaurant .restaurant-cards .cards .cards-link .cards-image {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 .restaurant .restaurant-cards .cards .cards-content {
-  display: grid;
   grid-area: 2/1/3/2;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-top: 20px;
 }
 .restaurant .restaurant-cards .cards .cards-content__title {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 .restaurant .restaurant-cards .cards .cards-content__text {
+  margin: 0;
   font-size: 17px;
   font-weight: 300;
 }
 .restaurant .restaurant-cards .cards .cards__heart {
   grid-area: 2/2/3/3;
-  position: relative;
   cursor: pointer;
-  top: 15px;
-  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: larger;
+  margin-bottom: 20px;
 }
 .restaurant .restaurant-cards .cards .cards__heart .like-checkbox {
   display: none; /* Cache la case à cocher */

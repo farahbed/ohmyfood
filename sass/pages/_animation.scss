@@ -22,6 +22,9 @@
     .meal__list > .meal__content:nth-child(3) {
         @include fadeInUp(1.4s);
     }
+    .meal__list > .meal__content:nth-child(4) {
+        @include fadeInUp(1.6s);
+    }
 }
 
 #plats {
@@ -69,15 +72,15 @@
 .meal-checkbox {
     display: flex;
     align-items: center;
-    position: absolute;
-    right: -45px; // Placer juste à côté de .price initialement
-    width: 45px;
-    height: 100%;
+    margin-right: -60px; // Placer juste à côté de .price initialement
+    width: 60px;
+    height: 60px;
     background-color: $light__green;
-    opacity: 0;
     transition: all 0.3s ease-out;
     border-radius: 0 15px 15px 0;
     justify-content: center;
+    margin-top: -5px;
+    margin-bottom: -5px;
     
     i {
         font-size: 20px;
@@ -87,16 +90,11 @@
 
 .meal__content:hover .meal-checkbox {
     opacity: 1;
-    right: 0; // Déplacer à la position initiale
+    margin-right: -5px; // Déplacer à la position initiale
+
 }
 
-.meal__content:hover .price {
-    transform: translateX(-45px); // Déplacer vers la gauche quand on survole .meal__content
-}
 
-.meal__content.meal__content:hoveer .meal__text {
-    transform: translateX(-45px);
-}
 
 // fin animation checkbox
 
@@ -157,4 +155,3 @@
 }
 
 	
-
