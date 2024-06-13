@@ -104,7 +104,7 @@
   position: relative;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 5px;
@@ -114,11 +114,11 @@
   text-overflow: ellipsis;
   width: 100%;
   margin-left: 10px;
+  margin-top: 5px;
 }
 .meal__section .meal__list .meal__content .meal__text .meal-title {
   font-size: 18px;
   font-weight: 500;
-  font-style: italic;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -129,12 +129,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 5px;
 }
 .meal__section .meal__list .meal__content .price {
   font-weight: bold;
   font-size: 15px;
   margin-left: auto;
   margin-right: 20px;
+  margin-top: 15px;
 }
 
 .details__btn {
@@ -249,8 +251,8 @@
   display: flex;
   align-items: center;
   margin-right: -60px;
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 74px;
   background-color: #99E2D0;
   transition: all 0.3s ease-out;
   border-radius: 0 15px 15px 0;
@@ -364,6 +366,7 @@ footer .footer_nav {
   flex-direction: column;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 0;
 }
 @media screen and (min-width: 768px) {
   footer .footer_nav {
@@ -460,7 +463,7 @@ footer .footer_nav i {
   font-size: 16px;
   font-weight: 500;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   background-color: #F6F6F6;
   gap: 20px;
@@ -548,7 +551,7 @@ footer .footer_nav i {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: larger;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 .restaurant .restaurant-cards .cards .cards__heart .like-checkbox {

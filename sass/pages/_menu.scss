@@ -92,7 +92,7 @@
                 position: relative;
                 border-radius: 20px;
                 background-color: white;
-                box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
                 overflow: hidden;
                 text-overflow: ellipsis;
                 padding: 5px;
@@ -103,12 +103,12 @@
                     text-overflow: ellipsis;
                         width: 100%;
                         margin-left: 10px;
+                        margin-top: 5px;
                        
                         .meal-title {
                             
                             font-size: 18px;
                             font-weight: 500;
-                            font-style: italic;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -120,6 +120,7 @@
                                 white-space: nowrap;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
+                                margin-top: 5px;
                             }
                         
                     }
@@ -129,6 +130,7 @@
                                     font-size: 15px;
                                     margin-left: auto;
                                     margin-right: 20px;
+                                    margin-top: 15px
                                     
                                 }                
             }
