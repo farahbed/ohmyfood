@@ -27,12 +27,7 @@ h3 {
     margin: 0; /* Changer la marge supérieure et inférieure à 0.5em et supprimer les marges gauche et droite */
     unicode-bidi: normal; /* Retirer la propriété unicode-bidi */
 }
-p {
-    
-    font-size: 16px;
-    margin: 0;
-    unicode-bidi: normal;
-}
+
 
 a{
 
@@ -45,6 +40,7 @@ ul li{
 }
 .title-section {
     margin-left: 6%;
+    margin-top: 10%;
     
 
     @media screen and (min-width: 768px) {
