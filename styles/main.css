@@ -45,34 +45,34 @@
   font-style: italic;
   margin-left: 10px;
 }
-.meal .meal-header .cards__heart {
+.meal .meal-header .meal__heart {
   cursor: pointer;
   font-size: larger;
   position: relative;
   top: -10px;
 }
-.meal .meal-header .cards__heart .like-checkbox {
+.meal .meal-header .meal__heart .like-checkbox {
   display: none; /* Cache la case à cocher */
 }
-.meal .meal-header .cards__heart .myemptyheart,
-.meal .meal-header .cards__heart .myfullheart {
+.meal .meal-header .meal__heart .myemptyheart,
+.meal .meal-header .meal__heart .myfullheart {
   position: absolute;
   transition: opacity 0.3s ease-in-out;
 }
-.meal .meal-header .cards__heart .myemptyheart {
+.meal .meal-header .meal__heart .myemptyheart {
   opacity: 1; /* Cœur vide visible par défaut */
 }
-.meal .meal-header .cards__heart .myfullheart {
+.meal .meal-header .meal__heart .myfullheart {
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0; /* Cœur plein caché par défaut */
 }
-.meal .meal-header .cards__heart .like-checkbox:checked + label .myemptyheart {
+.meal .meal-header .meal__heart .like-checkbox:checked + label .myemptyheart {
   opacity: 0; /* Cœur vide caché lorsque la case à cocher est cochée */
 }
-.meal .meal-header .cards__heart .like-checkbox:checked + label .myfullheart {
+.meal .meal-header .meal__heart .like-checkbox:checked + label .myfullheart {
   opacity: 1; /* Cœur plein visible lorsque la case à cocher est cochée */
 }
 
@@ -151,6 +151,7 @@
   transition: opacity 300ms;
   box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.5);
   align-self: center;
+  cursor: pointer;
   width: 50%;
 }
 .details__btn:hover {
@@ -251,7 +252,7 @@
   display: flex;
   align-items: center;
   margin-right: -60px;
-  width: 62px;
+  width: 60px;
   height: 74px;
   background-color: #99E2D0;
   transition: all 0.3s ease-out;
@@ -267,7 +268,7 @@
 
 .meal__content:hover .meal-checkbox {
   opacity: 1;
-  margin-right: -5px;
+  margin-right: -7px;
 }
 
 #loader {
@@ -433,6 +434,7 @@ footer .footer_nav i {
   transition: opacity 300ms;
   box-shadow: 0 7px 7px -5px rgba(0, 0, 0, 0.5);
   align-self: center;
+  cursor: pointer;
 }
 .details__btn:hover {
   opacity: 0.5;
@@ -468,6 +470,7 @@ footer .footer_nav i {
   background-color: #F6F6F6;
   gap: 20px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  width: -webkit-fill-available;
 }
 .menu-sort li .menu-sort__number {
   margin-left: -30px;
@@ -581,6 +584,7 @@ footer .footer_nav i {
 .restaurant .restaurant-cards .cards .cards__new {
   grid-area: 1/2/2/3;
   padding: 10px;
+  margin-left: 15%;
 }
 .restaurant .restaurant-cards .cards .cards__new .new {
   border: 2px solid #99E2D0;

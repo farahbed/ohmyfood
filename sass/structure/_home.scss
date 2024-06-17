@@ -87,6 +87,7 @@
 			background-color: $background_section;
 			gap: 20px;
 			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+			width: -webkit-fill-available;
 			
 
 			.menu-sort__number {
@@ -190,6 +191,8 @@
 								.cards__new {
 									grid-area: 1 / 2 / 2 / 3;
 									padding: 10px;
+									margin-left: 15%;
+									
 									.new {
 										@include new;
 									}

@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     margin-right: -60px; // Placer juste à côté de .price initialement
-    width: 62px;
+    width: 60px;
     height: 74px;
     background-color: $light__green;
     transition: all 0.3s ease-out;
@@ -90,7 +90,7 @@
 
 .meal__content:hover .meal-checkbox {
     opacity: 1;
-    margin-right: -5px; // Déplacer à la position initiale
+    margin-right: -7px; // Déplacer à la position initiale
 
 }
 
