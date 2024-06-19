@@ -1,13 +1,8 @@
-//importation des scss
-
-@import "./sass/utils/_variables";
-@import "./Sass/utils/_mixins";
-@import "./Sass/pages/_menu";
-@import "./Sass/pages/_animation";
-@import "./structure/_header";
-@import "./Sass/structure/_footer";
-@import "./Sass/structure/_home";
-@import "./Sass/bases/_general";
-
-
-
+@import "../utils/_variables";
+@import "../utils/_mixins";
+@import "../pages/_menu";
+@import "../pages/_animation";
+@import "../structure/_header";
+@import "../structure/_footer";
+@import "../structure/_home";
+@import "../bases/_general";
