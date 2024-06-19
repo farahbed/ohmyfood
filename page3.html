@@ -11,19 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./Sass/styles/main.css">
 </head>
 
 <body>
     <header>
         <a href="index.html" aria-label="Retour à l'accueil"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
-        <img class="logo" src="Bendriss_Farah_4_Img&textes_052024/images/logo/ohmyfood.png" alt="Logo ohmyfood">
+        <img class="logo" src="img&textes/images/logo/ohmyfood.png" alt="Logo ohmyfood">
     </header>
 
     <main>
         <!-- Cover's picture -->
         <div class="div-picture">
-            <img class="picture" src="Bendriss_Farah_4_Img&textes_052024/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du restaurant">
+            <img class="picture" src="img&textes/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du restaurant">
         </div>
 
         <!-- Restaurant -->
@@ -40,134 +40,141 @@
             </div>
 
             <!-- Entrées -->
-            <div class="meal__section" id="entrees">
+            <div class="meal__section">
                 <h2 class="title">ENTRÉES</h2>
-                <div class="meal__list">
+                <div id="entrees">
+                    <div class="meal__list">
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Ravioles de foie gras</h3>
-                            <p class="meal-description">Accompagnées de leur crème à la truffe</p>
-                        </div>
-                        <span class="price">25€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Ravioles de foie gras</h3>
+                                <p class="meal-description">Accompagnées de leur crème à la truffe</p>
+                            </div>
+                            <span class="price">25€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Caviar osciéré</h3>
-                            <p class="meal-description">Sur blini à la farine de blé noir</p>
-                        </div>
-                        <span class="price">35€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Caviar osciéré</h3>
+                                <p class="meal-description">Sur blini à la farine de blé noir</p>
+                            </div>
+                            <span class="price">35€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Homard et espuma de potiron</h3>
-                            <p class="meal-description">Mariné aux zestes d'orange</p>
-                        </div>
-                        <span class="price">20€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Homard et espuma de potiron</h3>
+                                <p class="meal-description">Mariné aux zestes d'orange</p>
+                            </div>
+                            <span class="price">20€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Foie gras de canard cuit entier</h3>
-                            <p class="meal-description">Confiture de figue et pain toasté</p>
-                        </div>
-                        <span class="price">35€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Foie gras de canard cuit entier</h3>
+                                <p class="meal-description">Confiture de figue et pain toasté</p>
+                            </div>
+                            <span class="price">35€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
+
+                    </div>
                     
                 </div>
             </div>
 
             <!-- Plats -->
-            <div class="meal__section" id="plats">
+            <div class="meal__section">
                 <h2 class="title">PLATS</h2>
-                <div class="meal__list">
+                <div id="plats">
+                    <div class="meal__list">
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Noix de coquilles Saint-Jacques</h3>
-                            <p class="meal-description">Sur lit de purée de céleri-rave</p>
-                        </div>
-                        <span class="price">40€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Noix de coquilles Saint-Jacques</h3>
+                                <p class="meal-description">Sur lit de purée de céleri-rave</p>
+                            </div>
+                            <span class="price">40€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                          <h3 class="meal-title">Langoustine poêlée</h3>
-                            <p class="meal-description">Purée de patate douce</p>
-                        </div>
-                            <span class="price">35€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                            <h3 class="meal-title">Langoustine poêlée</h3>
+                                <p class="meal-description">Purée de patate douce</p>
+                            </div>
+                                <span class="price">35€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                         <h3 class="meal-title">Mijoté de queue de boeuf</h3>
-                            <p class="meal-description">Et riz sauvage aux zestes de citron</p>
-                        </div>
-                        <span class="price">44€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                            <h3 class="meal-title">Mijoté de queue de boeuf</h3>
+                                <p class="meal-description">Et riz sauvage aux zestes de citron</p>
+                            </div>
+                            <span class="price">44€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
 
             <!-- Desserts -->
-            <div class="meal__section" id="dessert">
+            <div class="meal__section">
                 <h2 class="title">DÉSSERTS</h2>
-                <div class="meal__list">
+                <div id="dessert">
+                    <div class="meal__list">
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Macaron noisette et chocolat</h3>
-                            <p class="meal-description">Glace au caramel au piment d'Espelette</p>
-                        </div>
-                        <span class="price">18€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Macaron noisette et chocolat</h3>
+                                <p class="meal-description">Glace au caramel au piment d'Espelette</p>
+                            </div>
+                            <span class="price">18€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Baba au rhum revisité</h3>
-                            <p class="meal-description">Avec son coulis de citron</p>
-                        </div>
-                        <span class="price">22€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Baba au rhum revisité</h3>
+                                <p class="meal-description">Avec son coulis de citron</p>
+                            </div>
+                            <span class="price">22€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Tarte au citron meringuée</h3>
-                            <p class="meal-description">Déstructurée</p>
-                        </div>
-                        <span class="price">23€</span>
-                        <div class="meal-checkbox">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </article>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Tarte au citron meringuée</h3>
+                                <p class="meal-description">Déstructurée</p>
+                            </div>
+                            <span class="price">23€</span>
+                            <div class="meal-checkbox">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
 

@@ -72,15 +72,15 @@
 .meal-checkbox {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: -60px; // Placer juste à côté de .price initialement
     width: 60px;
     height: 74px;
+    margin-top: -5px;
+    margin-bottom: -5px;
     background-color: $light__green;
     transition: all 0.3s ease-out;
     border-radius: 0 15px 15px 0;
-    justify-content: center;
-    margin-top: -5px;
-    margin-bottom: -5px;
     
     i {
         font-size: 20px;

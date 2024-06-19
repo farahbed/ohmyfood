@@ -11,20 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./Sass/styles/main.css">
 </head>
 
 <body>
     <header>
         <a href="index.html"  aria-label="Retour à l'accueil"><i class="fa-solid fa-arrow-left back-arrow"></i></a>
-        <img class="logo" src="Bendriss_Farah_4_Img&textes_052024/images/logo/ohmyfood.png" alt="logo">
+        <img class="logo" src="img&textes/images/logo/ohmyfood.png" alt="logo">
     </header>
 
     <main>
         <!--cover's picture-->
         <div class="div-picture">
 
-            <img class="picture" src="Bendriss_Farah_4_Img&textes_052024/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
+            <img class="picture" src="img&textes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo 1">
 
         </div>
         <!--RESTAURANT-->
@@ -40,8 +40,9 @@
                 </div>  
             </div>
             <!--ENTREES-->
-            <div class="meal__section" id="entrees">
+            <div class="meal__section">
                 <h2 class="title">ENTRÉES</h2>
+                 <div id="entrees">
                     <div class="meal__list">
                     
                         <article class="meal__content">
@@ -81,86 +82,92 @@
                                 </div>
                             
                         </article>
+                        
                     </div>
+                </div>
             </div>
 
             <!--PLATS-->
-            <div class="meal__section" id="plats">
+            <div class="meal__section">
                 <h2 class="title">PLATS</h2>
-                <div class="meal__list">
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Filet de boeuf aux herbes</h3>
-                            <p class="meal-description">Accompagné de sa ribambelle de légumes</p>
-                        </div>
-                        <span class="price">40€</span>
-                            <div class="meal-checkbox">
-                                <i class="fas fa-check-circle"></i>
+                <div id="plats">
+                    <div class="meal__list">
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Filet de boeuf aux herbes</h3>
+                                <p class="meal-description">Accompagné de sa ribambelle de légumes</p>
                             </div>
-                    </article>
+                            <span class="price">40€</span>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Parmentier de queue de boeuf</h3>
-                            <p class="meal-description">À la truffe noire sur sa purée de panais</p>
-                        </div>
-                            <span class="price">35€</span>
-                            <div class="meal-checkbox">
-                                <i class="fas fa-check-circle"></i>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Parmentier de queue de boeuf</h3>
+                                <p class="meal-description">À la truffe noire sur sa purée de panais</p>
                             </div>
-                    </article>
+                                <span class="price">35€</span>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Filet de Turbot</h3>
-                            <p class="meal-description">Aux agrumes</p>
-                        </div>
-                            <span class="price">44€</span>
-                            <div class="meal-checkbox">
-                                <i class="fas fa-check-circle"></i>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Filet de Turbot</h3>
+                                <p class="meal-description">Aux agrumes</p>
                             </div>
-                    
-                    </article>
+                                <span class="price">44€</span>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                        
+                        </article>
+                    </div>
                 </div>
             </div>
 
             <!--DESSERTS-->
-            <div class="meal__section" id="dessert">
+            <div class="meal__section">
                 <h2 class="title">DESSERTS</h2>
-                <div class="meal__list">
+                <div id="dessert">
+                    <div class="meal__list">
                     
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Paris-Brest</h3>
-                            <p class="meal-description">Revisite</p>
-                        </div>
-                            <span class="price">18€</span>
-                            <div class="meal-checkbox">
-                                <i class="fas fa-check-circle"></i>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Paris-Brest</h3>
+                                <p class="meal-description">Revisite</p>
                             </div>
-                    </article>
+                                <span class="price">18€</span>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Macaron au chocolat d'exception</h3>
-                            <p class="meal-description">Et glace à la vanille de Madagascar</p>
-                        </div>
-                        <span class="price">22€</span>
-                            <div class="meal-checkbox">
-                                <i class="fas fa-check-circle"></i>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Macaron au chocolat d'exception</h3>
+                                <p class="meal-description">Et glace à la vanille de Madagascar</p>
                             </div>
-                    </article>
+                            <span class="price">22€</span>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                        </article>
 
-                    <article class="meal__content">
-                        <div class="meal__text">
-                            <h3 class="meal-title">Mousse au chocolat</h3>
-                            <p class="meal-description">Au piment d'Espelette et à la truffe noire</p>
-                        </div>
-                        <span class="price">23€</span>
-                            <div class="meal-checkbox">
-                                <i class="fas fa-check-circle"></i>
+                        <article class="meal__content">
+                            <div class="meal__text">
+                                <h3 class="meal-title">Mousse au chocolat</h3>
+                                <p class="meal-description">Au piment d'Espelette et à la truffe noire</p>
                             </div>
-                    </article>
+                            <span class="price">23€</span>
+                                <div class="meal-checkbox">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                        </article>
+                    </div>
                 </div>
             </div>
 
