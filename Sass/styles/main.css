@@ -156,6 +156,7 @@
 }
 .details__btn:hover {
   opacity: 0.5;
+  box-shadow: 0 10px 10px -8px rgb(0, 0, 0);
 }
 @media screen and (min-width: 768px) {
   .details__btn {
@@ -251,15 +252,15 @@
 .meal-checkbox {
   display: flex;
   align-items: center;
-  margin-right: -60px;
-  width: 60px;
+  justify-content: center;
+  margin-right: -80px;
+  width: 80px;
   height: 74px;
+  margin-top: -5px;
+  margin-bottom: -5px;
   background-color: #99E2D0;
   transition: all 0.3s ease-out;
   border-radius: 0 15px 15px 0;
-  justify-content: center;
-  margin-top: -5px;
-  margin-bottom: -5px;
 }
 .meal-checkbox i {
   font-size: 20px;
@@ -348,11 +349,10 @@ footer {
   }
 }
 footer .footer_title {
-  display: flex;
   font-size: 18px;
   margin-left: 30px;
-  font-style: italic;
-  padding-left: 10px;
+  margin-top: 10px;
+  font-family: "Shrikhand", cursive;
 }
 @media screen and (min-width: 768px) {
   footer .footer_title {
@@ -438,6 +438,7 @@ footer .footer_nav i {
 }
 .details__btn:hover {
   opacity: 0.5;
+  box-shadow: 0 10px 10px -8px rgb(0, 0, 0);
 }
 
 .menu {
@@ -583,8 +584,16 @@ footer .footer_nav i {
 }
 .restaurant .restaurant-cards .cards .cards__new {
   grid-area: 1/2/2/3;
-  padding: 10px;
-  margin-left: 15%;
+  position: relative;
+  top: 50%;
+  left: 55%;
+  transform: translate(-36%, -34%);
+}
+@media screen and (min-width: 768px) {
+  .restaurant .restaurant-cards .cards .cards__new {
+    top: 50%;
+    left: 50%;
+  }
 }
 .restaurant .restaurant-cards .cards .cards__new .new {
   border: 2px solid #99E2D0;
@@ -594,6 +603,7 @@ footer .footer_nav i {
   font-weight: 500;
   width: 100%;
   height: 20%;
+  padding: 5px;
 }
 
 body {
@@ -604,12 +614,6 @@ body {
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-}
-
-h1 {
-  display: inline;
-  font-family: "Shrikhand", cursive;
-  font-weight: 500;
 }
 
 h3 {
