@@ -33,6 +33,7 @@
 		font-weight: 700;
 		text-align: center;
 		color: #000000;
+	
 
 	}
 	&__text {
@@ -190,8 +191,7 @@
 							}
 								.cards__new {
 									grid-area: 1 / 2 / 2 / 3;
-									margin-left: 25%;
-									margin-top: 5%;
+						
 									
 									.new {
 										@include new;

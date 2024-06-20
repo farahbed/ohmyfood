@@ -1,0 +1,8 @@
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore Sass generated .map files
+*.map
+
+# Ignore .vscode directory
+.vscode/
